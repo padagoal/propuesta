@@ -189,6 +189,9 @@ input[type="text"].form-control {
     margin-bottom: 1em;
 }
 
+input[type="text"].form-control:hover {
+    border-bottom: 1px solid #2279BD;
+}
 
 
 @media (max-width: 670px) {
