@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Costo Nuevo  - NumeroProducto - Nombre Producto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('#origenSel').change(function(){
+                if ($(this).val()=='Importado') {
+                    $('#impDiv').removeClass('hide');
+                    $('#impDiv').addClass('show');
+                }else{
+                    $('#impDiv').removeClass('show');
+                    $('#impDiv').addClass('hide');
+                }
+            })
+        });
+
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid menutop">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img alt="Brand" src="static/img/knowhow_logo.png" style="max-width:200px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><span class="navbar-text" style="color: black">21/07/2017 09:50</span></li>
+                <li><span class="navbar-text" style="color: black">Nombre de Usuario</span></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="bo1">
+    <div class="s_white" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="s_title" style="text-align: -webkit-center;">
+                        Agregar Costo Nuevo:
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p class="s_title" style="text-align: -webkit-left;">
+                        NumeroProducto - NombreProducto
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hor_line"></div>
+    <div class="s_white" style="margin-top: 2em;margin-bottom: 2em;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                        <p class="grilla_subtit_left sel_c">
+                            Proveedor:
+                        </p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12 sel_c">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                        <option data-tokens="PS Line">PS Line</option>
+                        <option data-tokens="Mediterranea">Mediterranea</option>
+                        <option data-tokens="Sol Control">Sol Control</option>
+                        <option data-tokens="Desarrollo KH">Desarrollo KH</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 grilla_subtit_left sel_c">Descripcion Costo:</div>
+                <div class="col-md-9"><input type="text" class="form-control" id="descrip_costo"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 grilla_subtit_left sel_c">Stock:</div>
+                <div class="col-md-3"><input type="text" class="form-control" id="stockCosto"></div>
+                <div class="col-md-1 grilla_subtit_left sel_c">Costo:</div>
+                <div class="col-md-5"><input type="text" class="form-control" id="Costo"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Moneda:
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 sel_c">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                        <option data-tokens="USD">USD</option>
+                        <option data-tokens="GS">Guaranies</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Cotizacion Moneda:
+                    </p>
+                </div>
+                <div class="col-md-3"><input type="text" class="form-control" id="CotizacionCosto"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Procedencia
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%" id="origenSel">
+                        <option data-tokens="Local" value="Local">Local</option>
+                        <option data-tokens="Importado" value="Importado">Importado</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                       Archivos:
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 sel_c">
+                    <input type="button" class="button-default" value="Seleccionar Archivo"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="impDiv" class="hide">
+        <div class="s_white">
+            <div class="hor_line" style="margin-bottom: 1em;"></div>
+        <div class="container">
+
+            <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12">
+                <p class="grilla_subtit_left sel_c">
+                    Costo del Flete
+                </p>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="costoFlete">
+            </div>
+            <div class="col-md-1 col-sm-3 col-xs-12">
+                <p class="grilla_subtit_left sel_c">
+                    Moneda Flete:
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-12 sel_c">
+                <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                    <option data-tokens="USD">USD</option>
+                    <option data-tokens="GS">Guaranies</option>
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <p class="grilla_subtit_left sel_c">
+                    Cotizacion del Flete
+                </p>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="cotizacionFlete">
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Costo del Despacho
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="costoDespacho">
+                </div>
+                <div class="col-md-1 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Moneda Despacho:
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-12 sel_c">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                        <option data-tokens="USD">USD</option>
+                        <option data-tokens="GS">Guaranies</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Cotizacion del Despacho
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="cotizacionDespacho">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="hor_line" ></div>
+    <div class="s_white" style="margin-top: 2em;margin-bottom: 2em;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"><input type="button" class="btn btn-success" value="Agregar" style="width: 100%"></div>
+                <div class="col-md-3"><input type="button" class="btn btn-danger" value="Borrar" style="width: 100%"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
