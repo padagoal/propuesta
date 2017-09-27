@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creacion Producto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid menutop">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img alt="Brand" src="static/img/knowhow_logo.png" style="max-width:200px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Page 1-1</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><span class="navbar-text" style="color: black">21/07/2017 09:50</span></li>
+                <li><span class="navbar-text" style="color: black">Nombre de Usuario</span></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="bo1">
+    <div class="s_white" style="margin-top: 2em;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Unidad de Negocio:
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 sel_c">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                        <option data-tokens="UNIDAD DE NEGOCIO">UNIDAD DE NEGOCIO</option>
+                        <option data-tokens="UNIDAD DE NEGOCIO2">UNIDAD DE NEGOCIO2</option>
+                    </select>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Unidad de Medida:
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 sel_c">
+                    <select class="selectpicker show-tick" data-live-search="true" data-width="100%">
+                        <option data-tokens="UNIDAD DE medida">UNIDAD DE medida</option>
+                        <option data-tokens="UNIDAD DE medidad2">UNIDAD DE medida2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Nombre del Producto:
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" id="NombreProducto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Descripcion del Producto:
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <input type="text" class="form-control" id="descProducto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Stock Actual:
+                    </p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <input type="text" class="form-control" id="stockProducto">
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        IVA:
+                    </p>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-12">
+                    <input type="text" class="form-control" id="ivaProducto">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <p class="grilla_subtit_left sel_c">
+                        Numero Prod.:
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <input type="text" class="form-control" id="NumProducto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hor_line" style="margin-top: 2em;margin-bottom: 2em;"></div>
+    <div class="s_white" style=" margin-bottom: 2em;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3"><input type="button" class="btn btn-success" value="Agregar" style="width: 100%"></div>
+                <div class="col-md-3"><input type="button" class="btn btn-danger" value="Borrar" style="width: 100%"></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
