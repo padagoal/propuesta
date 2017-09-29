@@ -137,6 +137,8 @@
 
 .s_title{  font-family: 'Hummst777', sans-serif;  color: black;  font-size: 25px; }
 
+.s_font{ font-family: 'Hummst777', sans-serif;  color: black;  font-size: 18px; text-align: center;}
+
 .s_line{ width: 100%;border: 1px solid grey; margin-top: 1em; margin-bottom: 1em;}
 
 .box { width: 100%; height: 40px; border: 1px solid white; background-color: #2279BD;  }
@@ -163,6 +165,9 @@
 
 .gly_color_play_grilla {color: #2279BD}
 
+.cabecera_tabla_costo{ background-color: #92bcee;height: 30px; border: 1px solid black;}
+
+.cabecera_tabla_costo_contenido{height: 38px; border: 1px solid black;}
 
 .caret {color: #2279BD}
 
